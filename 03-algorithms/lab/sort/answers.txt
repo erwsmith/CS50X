@@ -1,0 +1,37 @@
+sort1 uses: bubble
+
+How do you know?: primarily by elimination, as merge and selection sort were identified initially.
+In worst cases, sort1 yields similar magnitude results to sort3 (relatively slow); the O() values
+for bubble and selection sort are the same, so points to sort1 being either bubble or selection.
+In the best cases (sorted numbers), sort1 yields similar magnitude results to sort2 (relatively fast),
+the Omega values of bubble and merge are of similar magnitude. Combining this with what we know
+from the worst cases, sort1 uses the bubble algorithm.
+
+bubble sort: O(n**2), Omega(n)
+______________________________________________________________________________________________________
+
+sort2 uses: merge
+
+How do you know?: merge sorting time is O(n log n), compared to the O(n**2) of the other 2 algorithms,
+it is much faster in the worst cases (random and reversed) for the larger n values). This is evidence
+of sort2 implements the merge sorting algorithm. Timing each algorithm with the random data yielded
+the following:
+
+sort1, random 50,000 time = 7.7s
+sort2, random 50,000 time = 0.5s
+sort3, random 50,000 time = 3.0s
+
+merge sort: O(n log n), Omega(n log n)
+______________________________________________________________________________________________________
+
+sort3 uses: selection
+
+How do you know?: selection sorting time in the best case is Omega(n**2), much slower than the best
+case sorting time for the other 2 algorithms. Timing each algorithm with the sorted (best case) data
+yielded the following:
+
+sort1, sorted 50,000 time = 0.55s
+sort2, sorted 50,000 time = 0.59s
+sort3, sorted 50,000 time = 3.45s
+
+selection sort: O(n**2), Omega(n**2)
