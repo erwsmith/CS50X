@@ -19,10 +19,10 @@ def bisect(arr:list, x) -> int:
 
 def main():
 
-    arr = [2, 3, 3, 4, 6, 7, 7, 8, 9]
-    num = 5
+    arr = [2, 3, 3, 4, 5, 5, 6, 7, 7, 8, 9]
+    num = 11
     
-    return arr[bisect(arr, num)] == num
+    return arr[bisect(arr, num)] == num, num in arr
 
 
 if __name__ == '__main__':
