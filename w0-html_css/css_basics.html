@@ -4,34 +4,31 @@
     <head>
         <title>CSS Example Page</title>
         <link rel="stylesheet" href="styles.css">
-        <meta name="viewport" content width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     
     <body>
 
         <h1>Heading 1</h1>
-        <img src="cat.jpg" alt="Cat" width="100">
-        <br>
-        <br>
+        <hr>
+        <h2 id="foo">Heading 2</h2>
+        <h3 id="bar">Heading 3</h3>
+        <h4 class="baz">Heading 4</h4>
+        <!-- <img src="cat.jpg" alt="Cat" width="100"> -->
         <button>
             hover button
         </button>
 
-        
-        <h2 id="foo">Heading 2</h2>
         <ol>
             <li>ordered list item</li>
             <li>ordered list item</li>
         </ol>
         
-        <h3 id="bar">Heading 3</h3>
-        
         <ul>
             <li>unordered list item</li>  
             <li>unordered list item</li>
         </ul>
-        <hr>
-        <h4 class="baz">Heading 4</h4>
+
         <table>
             <thead>
                 <th>Ocean</th>
@@ -52,7 +49,6 @@
             </tbody>
         </table>
         <br>
-        <h5>Heading 5</h5>
         <form>
             <input name="name" type="text" placeholder="Name">
             <input type="submit">
@@ -61,8 +57,6 @@
             <input name="password" type="password" placeholder="Password">
             <input type="submit">
         </form>
-        <br>
-        <h6>Heading 6</h6>
         <div>
             Favorite color?
             <input name="color" type="radio" value="red"> Red
@@ -70,7 +64,6 @@
             <input name="color" type="radio" value="blue"> Blue
             <input name="color" type="radio" value="other"> Other
         </div>
-        <br>
         <div>
             <input name="country" list="countries" placeholder="Country">
             <datalist id="countries">
