@@ -9,7 +9,8 @@ with open("favorites.csv", "r") as file:
     # next(reader)
 
     for row in reader:
-        # strip leading and ending whitespace, uppercase all letters
+        # strip leading and ending whitespace,
+        # uppercase all letters, remove ":", change dashes to spaces
         title = row["title"].strip().upper().replace(":", "").replace("-", " ")
         if title in titles:
             titles[title] += 1
