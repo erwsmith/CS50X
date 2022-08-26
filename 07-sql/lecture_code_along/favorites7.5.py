@@ -1,6 +1,4 @@
 import csv
-
-# regex library
 import re
 
 counter = 0
@@ -12,4 +10,4 @@ with open("favorites.csv", "r") as file:
         if re.search("^(OFFICE|THE.OFFICE)$", title):
             counter += 1
 
-print(f"Number of people who like the office: {counter}")
+print(f"Number of people who like The Office: {counter}")
